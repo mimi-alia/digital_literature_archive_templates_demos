@@ -1,0 +1,24 @@
+{
+    "entries" : [
+        {
+            "date": "09/25/2026 but also it's a string so whatever",
+            "title": "Also, what happens if you click the button next to the date?",
+            "entry": "here's where you write whatever it is you want to write. It's written in pure json syntax in an editor likely with no auto correct, so whatever you write will be whata is published ver batim (did i spell that right? lmao no it's one word... verbatimmmmm but ayeee at least the letters are correct). If you care about them, use a word processor and copy + paste what you wrote here...",
+            "reads": "you can write entries as pure strings. THis is how it shows up",
+            "watches":["you can write entries as lists (between square brackets", "this is what that looks like", "don't forget to watch your syntax: opening bracket. two double quotation marks, comma between each item, closing bracket, trailing comma IF AND ONLY IF THERE IS A FOLLOWING CATEGROY AFTER"],
+            "listens":"",
+            "showerthoughts": "see that above? that's what it looks like to include a category but give it no value",
+            "other": ["you can add or modify categories in journal.js file in the 'createElements' function. Whether I suggest that or not depends on your ability to understand JavaScript. I'm sure you can figure it out!", "you also can completely exclude a category if you want, but if you do include everything, just know title and entry have to be there for some reason. havent fixed that bug yet"]
+        },
+        {
+            "date": "",
+            "title": "template",
+            "entry": "this needs to have a value for some reason",
+            "reads": "",
+            "watches":"",
+            "listens":"",
+            "showerthoughts": "",
+            "other": ""
+        }
+    ]
+}
