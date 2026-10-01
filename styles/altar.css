@@ -1,0 +1,102 @@
+/** background sizing and such **/
+html,
+body,
+#background-img {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+
+
+img {
+  display: block;
+  width: auto;
+  height: auto;
+}
+
+/********************** ***********************/
+/*             Style indiv imgs here          */
+/********************** ***********************/
+
+img,
+div {
+    position:absolute;
+}
+
+#background-img {
+  text-align: center;
+  width: auto;
+  object-fit: fill;
+  filter: brightness(70%);
+}
+
+#curtain {
+    right: 180px;
+    bottom: 20px;
+    width: 170%;
+    height: 150%;
+}
+
+#table {
+    width: 100%;
+    top: 500px;
+    filter: brightness(80%);
+}
+
+#journal {
+    width:30%;
+    height: 40%;
+    top: 450px;
+    left: 500px;
+}
+
+#candles {
+    width:20%;
+    height: 45%;
+    top: 300px;
+    left: 1000px;
+    z-index: 1;
+}
+
+.flame {
+    width: 80px;
+    height: 90px;
+}
+
+#flame-one{
+    right: 64px;
+    top: 295px;
+}
+
+#flame-two{
+    right: 175px;
+    top: 350px;
+}
+
+
+#torch-1{
+    right: 0px;
+    height: 200px
+}
+
+#torch-2{
+    left: 0px;
+    height: 200px
+}
+
+#oil-lamp {
+    top: 440px;
+    left: 30px;
+    width: 1250x;
+    height: 170px;
+}
+
+#gallery{
+    background-color: black;
+    border: 5px solid goldenrod;
+    height: 300px;
+    width: 400px;
+    left: 450px;
+    top: 100px;
+}
