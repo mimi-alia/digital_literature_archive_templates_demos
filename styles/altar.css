@@ -19,44 +19,60 @@ img {
 /*             Style indiv imgs here          */
 /********************** ***********************/
 
+body{
+    z-index: 2;
+    background: radial-gradient(circle closest-side, transparent 20%, black);
+}
+
 img,
 div {
     position:absolute;
 }
 
 #background-img {
-  text-align: center;
-  width: auto;
+  width: 100%;
   object-fit: fill;
-  filter: brightness(70%);
+  filter: brightness(100%);
+  mask-image: radial-gradient(black 10%, transparent);
+  z-index: 0;
+  
 }
 
-#curtain {
-    right: 180px;
-    bottom: 20px;
-    width: 170%;
-    height: 150%;
-}
 
 #table {
     width: 100%;
-    top: 500px;
-    filter: brightness(80%);
+    top: 65%;
+    filter: brightness(70%);
+    z-index: 5;
+    box-shadow: 500px 500px 200px rgba(0,0,0,0.9) inset;
 }
 
 #journal {
     width:30%;
     height: 40%;
-    top: 450px;
-    left: 500px;
+    top: 65%;
+    left: 37%;
+    z-index: 7;
+    
+    
+}
+
+#doily {
+    width:clamp(500px, 70%, 1000x);
+    height: 100%;
+    top: 50%;
+    left: 25%;
+    clip-path: rect(152px 1000px 100% 0);
+    filter: brightness(90%);
+    z-index: 5;
 }
 
 #candles {
-    width:20%;
-    height: 45%;
-    top: 300px;
-    left: 1000px;
-    z-index: 1;
+    width:15%;
+    height: 40%;
+    top: 35%;
+    left: 83%;
+    z-index: 5;
 }
 
 .flame {
@@ -65,31 +81,37 @@ div {
 }
 
 #flame-one{
-    right: 64px;
-    top: 295px;
+    left: 92%;
+    top: 25%;
 }
 
 #flame-two{
-    right: 175px;
-    top: 350px;
+    left: 83.5%;
+    top: 33%;
+}
+
+.torch {
+    z-index: 1;
+    filter: opacity(80%);
+    height: 400px;
+    width: 200px;
 }
 
 
 #torch-1{
     right: 0px;
-    height: 200px
 }
 
 #torch-2{
     left: 0px;
-    height: 200px
 }
 
 #oil-lamp {
-    top: 440px;
+    top: 55%;
     left: 30px;
     width: 1250x;
     height: 170px;
+    z-index: 5;
 }
 
 #gallery{
@@ -97,6 +119,241 @@ div {
     border: 5px solid goldenrod;
     height: 300px;
     width: 400px;
-    left: 450px;
-    top: 100px;
+    left: 35%;
+    top: 12%;
+}
+
+.heart-candle{
+    z-index: 2;
+}
+
+#ivies{
+    width: 120%;
+    height: 100%;
+    filter: brightness(90%);
+    z-index: 4;
+}
+
+/* Leaves */
+
+.leaves{
+    width: clamp(250px, 300px, 350px);
+    z-index: 6;
+    filter: brightness(80%);
+}
+
+#leaves-1 {
+    left: 35%;
+    top: 70%;
+}
+
+#leaves-2 {
+    left: 50%;
+    top: 80%;
+}
+
+#leaves-3 {
+    left: 30%;
+    top: 80%;
+}
+
+#leaves-4 {
+    left: 60%;
+    top: 65%;
+    
+}
+
+/* Petal frame */
+.petal {
+    z-index: 4;
+    width: clamp(50px, 80px, 120px);
+    filter: brightness(80%);
+}
+
+#petal-1{
+    left: 0;
+    top: 52%;
+    transform: rotate(45deg);
+}
+
+#petal-2{
+    left: 0;
+    top: 40%;
+    transform: rotate(325deg);
+}
+
+#petal-3{
+    left: 0;
+    top: 26%;
+    transform: rotate(45deg);
+}
+
+#petal-4{
+    left: 0;
+    top: 14%;
+    transform: rotate(325deg);
+}
+
+#petal-17{
+    left: 1%;
+    top: 0;
+    transform: rotate(145deg);
+}
+
+
+#petal-5{
+    left: 12%;
+    top: 0;
+    transform: rotate(45deg);
+}
+
+#petal-6{
+    left: 24%;
+    top: 0;
+    transform: rotate(325deg);
+}
+
+#petal-7{
+    left: 36%;
+    top: 0;
+    transform: rotate(45deg);
+}
+
+#petal-8{
+    left: 48%;
+    top: 0;
+    transform: rotate(325deg);
+}
+
+#petal-9{
+    left: 60%;
+    top: 0;
+    transform: rotate(45deg);
+}
+
+#petal-10{
+    left: 72%;
+    top: 0;
+    transform: rotate(325deg);
+}
+
+#petal-11{
+    left: 84%;
+    top: 0;
+    transform: rotate(45deg);
+}
+
+#petal-12{
+    left: 96%;
+    top: 0;
+    transform: rotate(325deg);
+}
+
+#petal-13{
+    left: 96%;
+    top: 14%;
+    transform: rotate(45deg);
+}
+
+#petal-14{
+    left: 96%;
+    top: 30%;
+    transform: rotate(325deg);
+}
+
+#petal-15{
+    left: 96%;
+    top: 42%;
+    transform: rotate(45deg);
+}
+
+#petal-16{
+    left: 96%;
+    top: 56%;
+    transform: rotate(325deg);
+}
+
+/* Bouquet */
+
+.bouquet {
+    z-index: 7;
+    width: 40%;
+}
+
+#white-flower1 {
+    left: 14%;
+    bottom: 10%;
+    transform: scaleX(-1);
+    width: 20%;
+    height: 30%;
+    z-index: 4;
+}
+
+#white-flower2 {
+    width: 20%;
+    height: 40%;
+    left: 20%;
+    bottom: 10%;
+}
+
+#flowers {
+    left: -15%;
+    top: 20%;
+    left: 7%;
+    top: 50%;
+}
+
+#roses {
+    left: 10%;
+    bottom: 10%;
+    width: 20%;;
+}
+
+/* heart candles */
+
+.heart {
+    height: 15%;
+    width: 10%;
+    z-index: 7;
+}
+
+#heart-candle-1 {
+    left: 70%;
+    top: 60%;
+}
+
+#heart-candle-2 {
+    left: 80%;
+    top: 80%;
+    
+}
+
+#heart-candle-3 {
+    left: 0%;
+    top: 40%;
+    height: 50%;
+    width: 25%;
+}
+
+/* string lights */
+
+.stringlights {
+    top: 5%;
+    width: 50%;
+    height: 17%;
+    filter: opacity(50%);
+}
+
+#string-lights-1 {
+    transform: rotate(-10deg);
+    elft: -10%;
+    top: 5%;
+}
+
+
+#string-lights-2 {
+    right: -10%;
+    top: 5%;
+    transform: scaleX(-1);
+    transform: rotate(10deg);
 }
