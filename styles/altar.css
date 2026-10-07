@@ -64,7 +64,7 @@ div {
 #table {
     width: 100%;
     top: 65%;
-    filter: brightness(70%);
+    filter: brightness(40%) saturate(150%);
     z-index: 5;
     box-shadow: 500px 500px 200px rgba(0,0,0,0.9) inset;
 }
@@ -75,8 +75,6 @@ div {
     top: 65%;
     left: 37%;
     z-index: 7;
-    
-    
 }
 
 #doily {
@@ -129,11 +127,12 @@ div {
 }
 
 #oil-lamp {
-    top: 55%;
+    top: 59%;
     left: 30px;
-    width: 1250x;
+    width: 150px;
     height: 170px;
     z-index: 5;
+    clip-path: ellipse(50px 70px);
 }
 
 
@@ -146,25 +145,45 @@ div {
 
 }
 
+.gallery-frame img {
+    pointer-events: none;   /* clicks pass through to the link below */
+}
 
 .gallery-frame img {
     transform: rotateY(50deg);
     transform: rotateX(20deg);
     position: relative;
+    width: 75%;
+    height: 75%;
+    pointer-events: none; /* clicks pass through to the link below */
 }
 
 #gallery{
     background-color: black;
-    height: 300px;
-    width: 300px;
+    width: 75%;
+    height: 75%;
     top: 10%;
     clip-path: circle(125px);
     
 }
 
-.heart-candle{
-    z-index: 2;
+
+@media (min-width: 1500px) {
+    .gallery-frame img,
+    #gallery
+    {
+        width: 100%;
+        height: 100%;
+    }
+
+    #gallery {
+        clip-path: circle(150px);
+    }
+
+    
 }
+
+
 
 #ivies{
     width: 120%;
@@ -363,7 +382,7 @@ div {
 
 #heart-candle-2 {
     left: 80%;
-    top: 80%;
+    top: 75%;
     
 }
 
