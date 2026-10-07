@@ -19,9 +19,11 @@ img {
 /*             Style indiv imgs here          */
 /********************** ***********************/
 
+/* This is the "wall" (the body of the document with divs simulating tiles) */
+
 body{
-    z-index: 2;
-    background: radial-gradient(circle closest-side, transparent 20%, black);
+    background: radial-gradient(circle closest-side, transparent 40%, rgb(56, 8, 8));
+    background-color: rgb(98, 42, 17);
 }
 
 img,
@@ -29,14 +31,34 @@ div {
     position:absolute;
 }
 
-#background-img {
+.grid {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.grid > *{
+    position: static;
+    box-sizing: border-box;
+    margin: 0;      
+    width: 25%;
+    height: 20%;
+    border: 2px solid rgb(98, 42, 17);
+    box-shadow: 10px 10px 20px rgb(42, 6, 6) inset;
+    
+}
+
+/* #background-img {
   width: 100%;
   object-fit: fill;
   filter: brightness(100%);
   mask-image: radial-gradient(black 10%, transparent);
   z-index: 0;
   
-}
+} */
 
 
 #table {
@@ -92,7 +114,7 @@ div {
 
 .torch {
     z-index: 1;
-    filter: opacity(80%);
+    filter: opacity(90%);
     height: 400px;
     width: 200px;
 }
