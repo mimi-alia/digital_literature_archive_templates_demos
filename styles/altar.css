@@ -136,13 +136,30 @@ div {
     z-index: 5;
 }
 
+
+/* Gallery Frame */
+.gallery-frame {
+    left: 30%;
+    top: 30%;
+    z-index: 6;
+    clip-path: ellipse(180px 200px);
+
+}
+
+
+.gallery-frame img {
+    transform: rotateY(50deg);
+    transform: rotateX(20deg);
+    position: relative;
+}
+
 #gallery{
     background-color: black;
-    border: 5px solid goldenrod;
     height: 300px;
-    width: 400px;
-    left: 35%;
-    top: 12%;
+    width: 300px;
+    top: 10%;
+    clip-path: circle(125px);
+    
 }
 
 .heart-candle{
