@@ -26,10 +26,22 @@ body{
     background-color: rgb(98, 42, 17);
 }
 
+/* HEEEEEEEEEEEEEEEYYYYYYYYYYY LOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOKKKKKKKKKKKKKKKKKKKK HEEEEEEEEEEEEEEEEEEEEEEEEEEREEEEEEEEEEEEEEEEEEEEE */
+/* This */
+/* right HERE? */
+/* is MY? */
+/* PRETTY BOY SWAG **AAAAAYEEEE*** */
+/* JK */
+/*  FRREEALZ THO THIS LIL POSITION ABSOLUTE THING IS WHAT ALLOWS YOU TO PICK UP AND MOVE THINGS USING TOP, BOTTOM, LEFT, RIGHT ETC AND GIVE IT LAYERING ORDER */
+/* u can also use "*" an asterisk if you want to target all elements instead of just specific ones like i did here */
+
 img,
-div {
+div,
+audio {
     position:absolute;
 }
+
+/* BACKGROUND TILES */
 
 .grid {
     width: 100%;
@@ -70,9 +82,9 @@ div {
 }
 
 #journal {
-    width:30%;
-    height: 40%;
-    top: 65%;
+    width:25%;
+    height: 35%;
+    top: 70%;
     left: 37%;
     z-index: 7;
 }
@@ -93,6 +105,7 @@ div {
     top: 35%;
     left: 83%;
     z-index: 5;
+    filter: brightness(80%) contrast(130%);
 }
 
 .flame {
@@ -168,6 +181,11 @@ div {
 }
 
 
+#gallery:hover {
+    background: radial-gradient(#e66465, #9198e5);
+}
+ 
+
 @media (min-width: 1500px) {
     .gallery-frame img,
     #gallery
@@ -188,7 +206,7 @@ div {
 #ivies{
     width: 120%;
     height: 100%;
-    filter: brightness(90%);
+    filter: brightness(50%);
     z-index: 4;
 }
 
@@ -224,7 +242,7 @@ div {
 /* Petal frame */
 .petal {
     z-index: 4;
-    width: clamp(50px, 80px, 120px);
+    width: clamp(50px, 60px, 120px);
     filter: brightness(80%);
 }
 
@@ -414,4 +432,51 @@ div {
     top: 5%;
     transform: scaleX(-1);
     transform: rotate(10deg);
+}
+
+/* RADIO/AUDIO WIDGET */
+
+#radio {
+    z-index:7;
+    bottom: 40%;
+    right: 12%;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    
+}
+
+
+#radio * {
+    margin: 10px;
+    padding: 20px;
+}
+
+#radio > div> audio {
+    z-index: 8;
+    width: 80px;
+    top: 120px;
+    left: 20px;
+
+}
+
+#radio > div> img {
+    pointer-events: none; /* clicks pass through to the link below */
+    filter: brightness(80%) saturate(80%);
+    width: 50%;
+    z-index: 6;
+    position: relative;
+    transform: scaleX(-1);
+}
+
+
+#radio marquee span{
+    z-index: 7;
+    display: block;
+    color: rgb(189, 159, 124)
+
+}
+
+#radio marquee span a {
+    color: rgb(156, 53, 53);
 }
