@@ -22,8 +22,8 @@ img {
 /* This is the "wall" (the body of the document with divs simulating tiles) */
 
 body{
-    background: radial-gradient(circle closest-side, transparent 40%, rgb(56, 8, 8));
-    background-color: rgb(98, 42, 17);
+    background: radial-gradient(circle closest-side, transparent 40%, rgb(81, 3, 3));
+    background-color: rgb(131, 34, 12);
 }
 
 /* HEEEEEEEEEEEEEEEYYYYYYYYYYY LOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOKKKKKKKKKKKKKKKKKKKK HEEEEEEEEEEEEEEEEEEEEEEEEEEREEEEEEEEEEEEEEEEEEEEE */
