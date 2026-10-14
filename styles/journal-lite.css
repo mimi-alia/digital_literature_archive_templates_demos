@@ -1,0 +1,163 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*
+
+Body
+
+*/
+
+html,
+body {
+	margin: 10px;
+}
+
+
+
+/*
+
+Section layout -- DO NOT TOUCH
+*/
+
+section {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	gap: 10px;
+	margin: 10px;
+	padding: 10px;
+}
+
+
+
+/*************************************************  *******************************************************/
+/* Edit here by selecting an element and adding styles */
+/*************************************************  *******************************************************/
+
+/*
+
+Header
+
+*/
+
+h1 {
+	font-size: 40px;
+}
+
+
+
+
+/* 
+styles applied to everythig in the section
+*/
+section {
+	font-size: 20px;
+	line-height: 30px; /* px is pixels, as in pixels on your screen. Can also use other measurements */
+	color: black;
+	font-family: serif;  /* other common fonts: sans-serif, 'Arial', 'Times New Roman' */
+	text-align: left; /* 	left, right, center, justify */
+	text-decoration: none; /* none, underline, overline, line-through */
+	font-size: 20px;
+
+}
+
+
+/* button */
+
+button {
+	margin-right: 10px;
+	padding: 2px;
+}
+
+
+/* date */
+section > div > span{
+	margin: 0;
+	font-size: 15px;
+}  
+
+/* section header*/
+
+h2{
+	font-size: 30px;
+}
+
+/* paragraph */
+
+ p {
+	margin-left: 20px;
+}
+
+/* lists */
+
+ ul {
+	margin-left: 30px;
+}
+
+/* list items */
+
+li{
+	margin-left: 20px;
+	margin-top: 10px;
+	list-style-type:disc;
+	list-style-position: inside;
+}
+
+
+
+/*
+
+Footer 
+
+*/
+
+footer {
+	font-size: 10px;
+	color:darkgray
+}
