@@ -47,12 +47,27 @@ table {
 	border-spacing: 0;
 }
 
+/*************************************************  *******************************************************/
+/* Edit here by selecting an element and adding styles */
+/*************************************************  *******************************************************/
+
+/*************************************************  *******************************************************/
+/* Relevant selectors: body (the entire document) span (text), div(sections for each chunk of content) */
+/*                     iframe (embeddable content) img(not yet included in the html but you can add) */
+/*************************************************  *******************************************************/
 
 body {
     background: radial-gradient(#e66465, #9198e5);
     background-attachment: fixed;
-    background-size: 100vw 100vh;   /* gradient sized to the viewport, not the page */
+    background-size: 100vw 100vh;   
 }
+
+span {
+    font-size: 20px;
+    line-height: 30px;
+}
+
+/* I wouldn't touch these unless you wanted to resize / change the page layout completely */
 
 .grid {
     display: grid;
@@ -78,8 +93,4 @@ body {
     background-color: azure;
     padding: 10px;
 
-}
-span {
-    font-size: 20px;
-    line-height: 30px;
 }
