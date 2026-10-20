@@ -53,7 +53,7 @@ table {
 
 /*************************************************  *******************************************************/
 /* Relevant selectors: body (the entire document) span (text), div(sections for each chunk of content) */
-/*                     iframe (embeddable content) img(not yet included in the html but you can add) */
+/*                     iframe (embeddable content) img(not yet included in the html but you can */
 /*************************************************  *******************************************************/
 
 body {
@@ -65,7 +65,9 @@ body {
 span {
     font-size: 20px;
     line-height: 30px;
+    background-color: salmon;
 }
+
 
 /* I wouldn't touch these unless you wanted to resize / change the page layout completely */
 
