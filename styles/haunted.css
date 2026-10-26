@@ -1,0 +1,519 @@
+/** background sizing and such **/
+html,
+body,
+#background-img {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+
+
+img {
+  display: block;
+  width: auto;
+  height: auto;
+}
+
+/********************** ***********************/
+/*             Style indiv imgs here          */
+/********************** ***********************/
+
+/* This is the "wall" (the body of the document with divs simulating tiles) */
+
+body{
+    background: radial-gradient(circle closest-side, transparent 40%, rgb(10, 9, 9));
+    background-color: rgb(37, 20, 20);
+    /* https://drive.google.com/file/d/15ctKEvhTAKdgYhuf3uSpJLAUuFDI5Pv-/view?usp=sharing */
+    /* background-image: url("https://lh3.googleusercontent.com/d/15ctKEvhTAKdgYhuf3uSpJLAUuFDI5Pv-=s800"); */
+}
+
+/* HEEEEEEEEEEEEEEEYYYYYYYYYYY LOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOKKKKKKKKKKKKKKKKKKKK HEEEEEEEEEEEEEEEEEEEEEEEEEEREEEEEEEEEEEEEEEEEEEEE */
+/* This */
+/* right HERE? */
+/* is MY? */
+/* PRETTY BOY SWAG **AAAAAYEEEE*** */
+/* JK */
+/*  FRREEALZ THO THIS LIL POSITION ABSOLUTE THING IS WHAT ALLOWS YOU TO PICK UP AND MOVE THINGS USING TOP, BOTTOM, LEFT, RIGHT ETC AND GIVE IT LAYERING ORDER */
+/* u can also use "*" an asterisk if you want to target all elements instead of just specific ones like i did here */
+
+img,
+div,
+audio {
+    position:absolute;
+}
+
+
+
+/* BACKGROUND TILES */
+
+.grid {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.grid > *{
+    position: static;
+    box-sizing: border-box;
+    margin: 0;      
+    width: 25%;
+    height: 20%;
+    border: 2px solid rgb(0, 0, 0);
+    box-shadow: 10px 10px 20px rgb(5, 0, 0) inset;
+    
+}
+
+#ghost {
+    display: block;
+    width: 50%;
+    height: 70%;   /* keeps the aspect ratio */
+    opacity: 0.2;
+}
+
+
+/* #background-img {
+  width: 100%;
+  object-fit: fill;
+  filter: brightness(100%);
+  mask-image: radial-gradient(black 10%, transparent);
+  z-index: 0;
+  
+} */
+
+
+#table {
+    width: 100%;
+    top: 65%;
+    filter: brightness(30%) saturate(150%);
+    z-index: 5;
+    box-shadow: 500px 500px 200px rgba(0,0,0,0.9) inset;
+}
+
+#journal {
+    width:25%;
+    height: 35%;
+    top: 70%;
+    left: 37%;
+    z-index: 7;
+    filter: brightness(75%) saturate(80%);
+}
+
+#doily {
+    width:clamp(500px, 70%, 1000x);
+    height: 100%;
+    top: 50%;
+    left: 25%;
+    clip-path: rect(152px 1000px 100% 0);
+    filter: brightness(70%);
+    z-index: 5;
+}
+
+#candles {
+    width:15%;
+    height: 40%;
+    top: 35%;
+    left: 83%;
+    z-index: 5;
+    filter: brightness(70%) contrast(130%) saturate(80%);
+}
+
+.flame {
+    width: 80px;
+    height: 90px;
+}
+
+#flame-one{
+    left: 92%;
+    top: 25%;
+}
+
+#flame-two{
+    left: 83.5%;
+    top: 33%;
+}
+
+.torch {
+    z-index: 1;
+    filter: opacity(90%);
+    height: 400px;
+    width: 200px;
+}
+
+
+#torch-1{
+    right: 0px;
+}
+
+#torch-2{
+    left: 0px;
+}
+
+#oil-lamp {
+    top: 59%;
+    left: 30px;
+    width: 150px;
+    height: 170px;
+    z-index: 5;
+    clip-path: ellipse(50px 70px);
+    filter: brightness(95%) saturate(90%);
+}
+
+
+/* Gallery Frame */
+.gallery-frame {
+    left: 30%;
+    top: 30%;
+    z-index: 6;
+    clip-path: ellipse(180px 200px);
+
+}
+
+.gallery-frame img {
+    pointer-events: none;   /* clicks pass through to the link below */
+}
+
+.gallery-frame img {
+    transform: rotateY(50deg);
+    transform: rotateX(20deg);
+    filter: brightness(70%) saturate(80%);
+    position: relative;
+    width: 75%;
+    height: 75%;
+    pointer-events: none; /* clicks pass through to the link below */
+}
+
+#gallery{
+    background-color: black;
+    width: 75%;
+    height: 75%;
+    top: 10%;
+    clip-path: circle(125px);
+    
+}
+
+
+#gallery:hover {
+    background: radial-gradient(#2b1313, #000000);
+}
+ 
+
+@media (min-width: 1500px) {
+    .gallery-frame img,
+    #gallery
+    {
+        width: 100%;
+        height: 100%;
+    }
+
+    #gallery {
+        clip-path: circle(150px);
+    }
+
+    
+}
+
+
+
+#ivies{
+    width: 120%;
+    height: 100%;
+    filter: brightness(40%) saturate(60%);
+    z-index: 4;
+}
+
+/* Leaves */
+
+.leaves{
+    width: clamp(250px, 300px, 350px);
+    z-index: 6;
+    filter: brightness(80%) saturate(40%);
+}
+
+#leaves-1 {
+    left: 35%;
+    top: 70%;
+}
+
+#leaves-2 {
+    left: 50%;
+    top: 80%;
+}
+
+#leaves-3 {
+    left: 30%;
+    top: 80%;
+}
+
+#leaves-4 {
+    left: 60%;
+    top: 65%;
+    
+}
+
+/* Petal frame */
+.petal {
+    z-index: 4;
+    width: clamp(50px, 100px, 120px);
+    filter: brightness(80%) saturate(80%);
+}
+
+#petal-1{
+    left: 0;
+    top: 52%;
+    transform: rotate(45deg);
+}
+
+#petal-2{
+    left: 0;
+    top: 40%;
+    transform: rotate(325deg);
+}
+
+#petal-3{
+    left: 0;
+    top: 26%;
+    transform: rotate(45deg);
+}
+
+#petal-4{
+    left: 0;
+    top: 14%;
+    transform: rotate(325deg);
+}
+
+#petal-17{
+    left: 1%;
+    top: 0;
+    transform: rotate(145deg);
+}
+
+
+#petal-5{
+    left: 12%;
+    top: 0;
+    transform: rotate(45deg);
+}
+
+#petal-6{
+    left: 24%;
+    top: 0;
+    transform: rotate(325deg);
+}
+
+#petal-7{
+    left: 36%;
+    top: 0;
+    transform: rotate(45deg);
+}
+
+#petal-8{
+    left: 48%;
+    top: 0;
+    transform: rotate(325deg);
+}
+
+#petal-9{
+    left: 60%;
+    top: 0;
+    transform: rotate(45deg);
+}
+
+#petal-10{
+    left: 72%;
+    top: 0;
+    transform: rotate(325deg);
+}
+
+#petal-11{
+    left: 84%;
+    top: 0;
+    transform: rotate(45deg);
+}
+
+#petal-12{
+    left: 96%;
+    top: 0;
+    transform: rotate(325deg);
+}
+
+#petal-13{
+    left: 96%;
+    top: 14%;
+    transform: rotate(45deg);
+}
+
+#petal-14{
+    left: 96%;
+    top: 30%;
+    transform: rotate(325deg);
+}
+
+#petal-15{
+    left: 96%;
+    top: 42%;
+    transform: rotate(45deg);
+}
+
+#petal-16{
+    left: 96%;
+    top: 56%;
+    transform: rotate(325deg);
+}
+
+/* Bouquet */
+
+.bouquet {
+    z-index: 7;
+    width: 40%;
+    filter: brightness(75%) saturate(80%);
+}
+
+#white-flower1 {
+    left: 14%;
+    bottom: 10%;
+    transform: scaleX(-1);
+    width: 20%;
+    height: 30%;
+    z-index: 4;
+}
+
+#white-flower2 {
+    width: 20%;
+    height: 40%;
+    left: 20%;
+    bottom: 10%;
+}
+
+#flowers {
+    left: -15%;
+    top: 20%;
+    left: 7%;
+    top: 50%;
+}
+
+#roses {
+    left: 10%;
+    bottom: 10%;
+    width: 20%;;
+}
+
+/* heart candles */
+
+.heart {
+    height: 15%;
+    width: 10%;
+    z-index: 7;
+    filter: brightness(75%) saturate(60%);
+}
+
+#heart-candle-1 {
+    left: 70%;
+    top: 60%;
+}
+
+#heart-candle-2 {
+    left: 80%;
+    top: 75%;
+    
+}
+
+#heart-candle-3 {
+    left: 0%;
+    top: 40%;
+    height: 50%;
+    width: 25%;
+}
+
+/* string lights */
+
+.stringlights {
+    top: 5%;
+    width: 50%;
+    height: 17%;
+    filter: opacity(50%);
+}
+
+#string-lights-1 {
+    transform: rotate(-10deg);
+    elft: -10%;
+    top: 5%;
+}
+
+
+#string-lights-2 {
+    right: -10%;
+    top: 5%;
+    transform: scaleX(-1);
+    transform: rotate(10deg);
+}
+
+/* RADIO/AUDIO WIDGET */
+
+#radio {
+    z-index:7;
+    bottom: 40%;
+    right: 12%;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    
+}
+
+
+#radio * {
+    margin: 10px;
+    padding: 20px;
+}
+
+#radio > div> audio {
+    z-index: 8;
+    width: 80px;
+    top: 120px;
+    left: 20px;
+
+}
+
+#radio > div> img {
+    pointer-events: none; /* clicks pass through to the link below */
+    filter: brightness(70%) saturate(60%);
+    width: 50%;
+    z-index: 6;
+    position: relative;
+    transform: scaleX(-1);
+}
+
+
+#radio marquee span{
+    z-index: 7;
+    display: block;
+    color: rgb(189, 159, 124)
+
+}
+
+#radio marquee span a {
+    color: rgb(156, 53, 53);
+}
+
+/* skull */
+
+#skull >img{
+    z-index: 10;
+    top: 70%;
+    left: 60%;
+    width: 300px;
+    filter: brightness(80%);
+}
+
+/* spider */
+#spider >img{
+    z-index: 10;
+    top: 0%;
+    left: 60%;
+    width: 200px;
+    filter: brightness(70%) saturate(60%);
+
+}
