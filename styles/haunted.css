@@ -524,5 +524,5 @@ audio {
 video {
     width: 100vw;
     height: 100vh;
-    object-fit: contain; /* fills the screen, crops edges if needed */
+    object-fit: contain;
   }
