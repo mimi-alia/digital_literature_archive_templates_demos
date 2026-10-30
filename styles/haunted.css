@@ -138,7 +138,7 @@ audio {
 
 .torch {
     z-index: 1;
-    filter: opacity(90%);
+    filter: opacity(90%) saturate(70%) brightness(70%);
     height: 400px;
     width: 200px;
 }
@@ -517,3 +517,12 @@ audio {
     filter: brightness(70%) saturate(60%);
 
 }
+
+
+/* video */
+
+video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: contain; /* fills the screen, crops edges if needed */
+  }
